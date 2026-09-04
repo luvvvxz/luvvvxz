@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="T&L Cafe — คาเฟ่ทันสมัย เสิร์ฟกาแฟคุณภาพสูง เบเกอรี่อบสดทุกวัน บรรยากาศอบอุ่นสำหรับทุกคน">
+<meta name="theme-color" content="#1a1614">
+<meta property="og:title" content="T&L Cafe — Coffee & Bakery">
+<meta property="og:description" content="กาแฟคุณภาพ เบเกอรี่อบสด บรรยากาศอบอุ่น ทุกวันที่ T&L">
+<meta property="og:type" content="website">
+<title>T&L Cafe — Coffee & Bakery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Noto+Serif+Thai:wght@400;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a href="#top" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+
+<svg style="display:none" aria-hidden="true">
+  <symbol id="icon-espresso" viewBox="0 0 48 48">
+    <path d="M11,18 h22 v11 a11,11 0 0 1 -22,0 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M33,20 q8,0.5 8,6.5 q0,6.5 -8,6.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <ellipse cx="22" cy="31" rx="15" ry="3" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <path d="M18,12 q2,-3 0,-5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="M25,12 q2,-3 0,-5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-americano" viewBox="0 0 48 48">
+    <path d="M14,12 h18 v23 a9,9 0 0 1 -18,0 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M32,16 q7,0.5 7,5.5 q0,5.5 -7,5.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <path d="M19,9 q2,-3 0,-5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="M27,9 q2,-3 0,-5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-latte" viewBox="0 0 48 48">
+    <path d="M14,14 h18 v22 a9,9 0 0 1 -18,0 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M32,18 q7,0.5 7,5.5 q0,5.5 -7,5.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <path d="M23,17 c-3,-3 -8,0 -4,4 c2,2 4,4 4,6 c0,-2 2,-4 4,-6 c4,-4 -1,-7 -4,-4 z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="icon-cappuccino" viewBox="0 0 48 48">
+    <path d="M12,17 h20 v12 a10,10 0 0 1 -20,0 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M32,19 q7.5,0.5 7.5,6 q0,6 -7.5,6" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <path d="M17,17 c1,-2 3,-2 4,0 c1,-2 3,-2 4,0 c1,-2 3,-2 4,0 c1,-2 3,-2 4,0" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-dirty" viewBox="0 0 48 48">
+    <path d="M15,10 h18 v26 h-18 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M15,22 h18" stroke="currentColor" stroke-width="1.3" stroke-dasharray="2 2"/>
+    <rect x="19" y="14" width="4" height="4" rx="0.6" fill="none" stroke="currentColor" stroke-width="1.2"/>
+    <rect x="25" y="16" width="4" height="4" rx="0.6" fill="none" stroke="currentColor" stroke-width="1.2"/>
+  </symbol>
+
+  <symbol id="icon-tonic" viewBox="0 0 48 48">
+    <path d="M16,10 h16 v27 h-16 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <circle cx="21" cy="26" r="1.4" fill="currentColor"/>
+    <circle cx="27" cy="20" r="1.2" fill="currentColor"/>
+    <circle cx="23" cy="15" r="1" fill="currentColor"/>
+    <path d="M30,10 a5,5 0 0 1 0,9" fill="none" stroke="currentColor" stroke-width="1.3"/>
+    <path d="M30,10 v9 M30,14.5 h5" stroke="currentColor" stroke-width="1"/>
+  </symbol>
+
+  <symbol id="icon-macchiato" viewBox="0 0 48 48">
+    <path d="M12,18 h20 v10 a10,10 0 0 1 -20,0 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M32,20 q7,0.5 7,5.5 q0,5.5 -7,5.5" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <circle cx="22" cy="19" r="2.4" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-dripper" viewBox="0 0 48 48">
+    <path d="M13,12 h22 l-8,13 h-6 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M18,28 h12 v6 a6,6 0 0 1 -12,0 z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M24,25 v3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-coldbrew" viewBox="0 0 48 48">
+    <path d="M15,11 h18 v25 h-18 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <rect x="19" y="16" width="4.5" height="4.5" fill="none" stroke="currentColor" stroke-width="1.1"/>
+    <rect x="25" y="22" width="4.5" height="4.5" fill="none" stroke="currentColor" stroke-width="1.1"/>
+    <path d="M30,6 l-2,26" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-teaglass" viewBox="0 0 48 48">
+    <path d="M15,11 h18 v25 h-18 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M15,22 h18" stroke="currentColor" stroke-width="1.3"/>
+    <path d="M30,6 l-2,26" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+    <path d="M20,16 c-3,0 -3,4 0,4 c3,0 1,-4 0,-4 z" fill="none" stroke="currentColor" stroke-width="1.1"/>
+  </symbol>
+
+  <symbol id="icon-matcha" viewBox="0 0 48 48">
+    <path d="M10,18 q14,8 28,0 l-3,10 a12,5 0 0 1 -22,0 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M18,15 v-3 M22,14 v-4 M26,14 v-4 M30,15 v-3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-cocoa" viewBox="0 0 48 48">
+    <path d="M13,17 h18 v12 a9,9 0 0 1 -18,0 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M31,20 q6,0.5 6,5 q0,5 -6,5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="19" cy="15" r="2.2" fill="none" stroke="currentColor" stroke-width="1.2"/>
+    <circle cx="25" cy="14" r="2.2" fill="none" stroke="currentColor" stroke-width="1.2"/>
+  </symbol>
+
+  <symbol id="icon-lemon" viewBox="0 0 48 48">
+    <path d="M15,11 h18 v25 h-18 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <circle cx="24" cy="20" r="5.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+    <path d="M24,14.5 v11 M18.5,20 h11 M20,16 l8,8 M28,16 l-8,8" stroke="currentColor" stroke-width="0.9"/>
+    <path d="M30,6 l-2,26" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-croissant" viewBox="0 0 48 48">
+    <path d="M9,28 C9,16 20,10 32,12 C28,14 22,17 20,22 C24,21 30,20 35,23 C30,24 25,27 22,31 C27,30 32,30 37,33 C30,36 15,36 9,28 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+    <path d="M17,20 q2,3 0,6 M24,17 q2,4 0,7" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-pie" viewBox="0 0 48 48">
+    <path d="M8,34 L24,12 L40,34 Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M13,26 q11,-8 22,0" fill="none" stroke="currentColor" stroke-width="1.3"/>
+    <circle cx="24" cy="24" r="1.2" fill="currentColor"/>
+    <circle cx="20" cy="27" r="1.1" fill="currentColor"/>
+    <circle cx="28" cy="27" r="1.1" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-cookie" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="13" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <circle cx="19" cy="20" r="1.4" fill="currentColor"/>
+    <circle cx="28" cy="19" r="1.3" fill="currentColor"/>
+    <circle cx="30" cy="27" r="1.4" fill="currentColor"/>
+    <circle cx="21" cy="29" r="1.2" fill="currentColor"/>
+    <circle cx="25" cy="24" r="1.2" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-frappe-coffee" viewBox="0 0 48 48">
+    <path d="M16,18 h16 v19 a8,8 0 0 1 -16,0 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M13,18 c3,-4 19,-4 22,0" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M22,10 q-3,2 0,4 q3,2 0,4" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M32,8 l-3,10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-frappe-choc" viewBox="0 0 48 48">
+    <path d="M16,18 h16 v19 a8,8 0 0 1 -16,0 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M13,18 c3,-4 19,-4 22,0" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M18,18 q3,7 -1,12 M24,18 q3,8 -1,13 M30,18 q2,6 -1,11" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+    <path d="M32,8 l-3,10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-taro" viewBox="0 0 48 48">
+    <path d="M16,18 h16 v19 a8,8 0 0 1 -16,0 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M13,18 c3,-4 19,-4 22,0" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M20,10 c-2,2 0,4 2,4 c2,0 4,-2 2,-4 c2,2 4,4 2,6 c-2,2 -6,2 -8,0 c-2,-2 0,-4 2,-6 z" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+    <path d="M32,8 l-3,10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-brownie" viewBox="0 0 48 48">
+    <rect x="10" y="14" width="28" height="20" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M14,18 q5,4 0,8 M22,17 q5,5 0,9 M30,18 q5,4 0,8" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-soda" viewBox="0 0 48 48">
+    <path d="M17,8 h14 v4 l3,28 h-20 l3,-28 v-4 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M15,36 h18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+    <circle cx="22" cy="28" r="1.2" fill="currentColor" opacity="0.6"/>
+    <circle cx="27" cy="22" r="1" fill="currentColor" opacity="0.5"/>
+    <circle cx="24" cy="16" r="1.3" fill="currentColor" opacity="0.6"/>
+    <circle cx="20" cy="20" r="0.9" fill="currentColor" opacity="0.4"/>
+    <path d="M20,6 l1,3 M28,6 l-1,3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-honey" viewBox="0 0 48 48">
+    <path d="M15,11 h18 v25 h-18 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M15,22 h18" stroke="currentColor" stroke-width="1.3"/>
+    <path d="M20,16 l2,-3 l2,3 l2,-3 l2,3" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24,26 c-2,0 -3,1.5 -3,3 c0,2 1.5,3 3,3 c2,0 3,-1 3,-3 c0,-2 -1,-3 -3,-3 z" fill="none" stroke="currentColor" stroke-width="1.2"/>
+    <path d="M30,6 l-2,26" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-smoothie" viewBox="0 0 48 48">
+    <path d="M16,14 h16 l-3,24 h-10 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M14,14 h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M24,6 v8 M20,8 q4,-3 8,0" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+    <circle cx="20" cy="22" r="1.5" fill="currentColor" opacity="0.5"/>
+    <circle cx="27" cy="28" r="1.2" fill="currentColor" opacity="0.4"/>
+  </symbol>
+
+  <symbol id="icon-milk" viewBox="0 0 48 48">
+    <path d="M14,14 h20 v22 a9,9 0 0 1 -20,0 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M14,20 h20" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 2"/>
+    <path d="M20,10 c0,-3 2,-3 4,0 c2,-3 4,-3 4,0" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+    <path d="M34,18 q6,0.5 6,5 q0,5 -6,5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  </symbol>
+
+  <symbol id="icon-teapot" viewBox="0 0 48 48">
+    <ellipse cx="22" cy="30" rx="12" ry="8" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <path d="M10,30 v-10 a12,8 0 0 1 24,0 v10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M34,20 h8 v6 h-8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    <path d="M20,13 q2,-4 0,-7 M26,13 q2,-4 0,-7" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+    <ellipse cx="22" cy="30" rx="4" ry="2" fill="none" stroke="currentColor" stroke-width="1"/>
+  </symbol>
+
+  <symbol id="icon-sandwich" viewBox="0 0 48 48">
+    <path d="M8,24 l16,-12 l16,12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M8,24 h32" stroke="currentColor" stroke-width="1.3"/>
+    <rect x="10" y="26" width="28" height="4" rx="1" fill="none" stroke="currentColor" stroke-width="1.2"/>
+    <path d="M8,32 h32" stroke="currentColor" stroke-width="1.3"/>
+    <path d="M8,32 l16,10 l16,-10" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="icon-banana" viewBox="0 0 48 48">
+    <path d="M15,11 h18 v25 h-18 z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <path d="M28,18 c-4,-2 -10,0 -8,6 c1,4 4,6 8,4" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+    <path d="M30,6 l-2,26" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-icecream" viewBox="0 0 48 48">
+    <path d="M14,24 l10,20 l10,-20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+    <circle cx="19" cy="18" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <circle cx="29" cy="18" r="7" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <path d="M19,11 v-3 M29,11 v-3 M24,12 v-4" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+  </symbol>
+
+  <symbol id="icon-avocado" viewBox="0 0 48 48">
+    <ellipse cx="24" cy="26" rx="12" ry="14" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <circle cx="24" cy="28" r="5" fill="none" stroke="currentColor" stroke-width="1.3"/>
+    <path d="M20,12 q4,-4 8,0" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+
+<header class="site-nav" id="siteNav">
+  <div class="wrap nav-row">
+    <a href="#top" class="brand-mark">T&amp;L <em>Cafe</em></a>
+    <nav class="links" id="navLinks">
+      <a href="#process">การคั่ว</a>
+      <a href="#menu">เมนู</a>
+      <a href="#reviews">รีวิว</a>
+      <a href="#about">เรื่องราว</a>
+      <a href="#visit">ที่ตั้ง</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="member-btn" id="memberBtn">สมัครสมาชิก</button>
+      <button class="cart-btn" id="cartBtn" aria-label="เปิดตะกร้าสินค้า">
+        🧺 ตะกร้า <span class="cart-count" id="cartCount" hidden aria-live="polite">0</span>
+      </button>
+      <button class="nav-toggle" id="navToggle" aria-label="เปิดเมนู" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="ember" style="left:8%; animation-delay:0s;"></div>
+    <div class="ember" style="left:22%; animation-delay:2s;"></div>
+    <div class="ember" style="left:41%; animation-delay:4.5s;"></div>
+    <div class="ember" style="left:63%; animation-delay:1.2s;"></div>
+    <div class="ember" style="left:80%; animation-delay:3.3s;"></div>
+
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="eyebrow">คาเฟ่ &amp; เบเกอรี่ · เปิดทุกวัน</span>
+        <h1>กาแฟดีๆ
+          <span>เริ่มที่ T&amp;L</span>
+        </h1>
+        <p class="lede">เราคัดสรรเมล็ดกาแฟคุณภาพสูงจากทั่วโลก คั่วสดสัปดาห์ละ 2 ครั้ง เสิร์ฟพร้อมเบเกอรี่อบใหม่ทุกเช้า ในบรรยากาศอบอุ่นที่ทุกคนเป็นครอบครัวเดียวกัน</p>
+        <div class="cta-row">
+          <a href="#menu" class="btn btn-primary">ดูเมนูเครื่องดื่ม</a>
+          <a href="#visit" class="btn btn-ghost">เวลาเปิด-ปิด</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 400">
+          <defs>
+            <radialGradient id="glow" cx="50%" cy="45%" r="45%">
+              <stop offset="0%" stop-color="#d4a84b" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#d4a84b" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="200" cy="180" r="160" fill="url(#glow)"/>
+          <path d="M140,280 h120 v-80 a60,60 0 0 0 -120,0 z" fill="none" stroke="#d4a84b" stroke-width="2.5" stroke-linejoin="round" opacity="0.7"/>
+          <path d="M260,220 q20,1 20,15 q0,15 -20,15" fill="none" stroke="#d4a84b" stroke-width="2.5" opacity="0.7"/>
+          <ellipse cx="200" cy="202" rx="75" ry="8" fill="none" stroke="#d4a84b" stroke-width="1.5" opacity="0.4"/>
+          <path d="M175,185 q5,-8 0,-14" fill="none" stroke="#c44d2a" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+          <path d="M200,182 q5,-10 0,-18" fill="none" stroke="#c44d2a" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+          <path d="M225,185 q5,-8 0,-14" fill="none" stroke="#c44d2a" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="process">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">ทำไมต้อง T&amp;L</span>
+        <h2>เราใส่ใจทุกขั้นตอน ตั้งแต่เมล็ดถึงแก้ว</h2>
+        <p>ทุกแก้วที่เสิร์ฟผ่านกระบวนการคัดสรรและชงอย่างพิถีพิถัน เพื่อให้คุณได้รสชาติที่ดีที่สุด</p>
+      </div>
+
+      <div class="process-track reveal">
+        <div class="process-step">
+          <span class="temp">01</span>
+          <h3>คัดสรรเมล็ด</h3>
+          <p>เลือกเมล็ดกาแฟคุณภาพสูงจากแหล่งปลูกชั้นนำทั่วโลก</p>
+        </div>
+        <div class="process-step">
+          <span class="temp">02</span>
+          <h3>คั่วสดสัปดาห์ละ 2 ครั้ง</h3>
+          <p>คั่วทีละล็อตเล็กเพื่อให้มั่นใจในความสดและกลิ่นหอมที่สมบูรณ์</p>
+        </div>
+        <div class="process-step is-peak">
+          <span class="temp">03</span>
+          <h3>ชงอย่างพิถีพิถัน</h3>
+          <p>บาริสต้าฝีมือดีชงทุกแก้วด้วยความใส่ใจ อุณหภูมิและเวลาที่พอเหมาะ</p>
+        </div>
+        <div class="process-step">
+          <span class="temp">04</span>
+          <h3>เบเกอรี่อบสด</h3>
+          <p>อบใหม่ทุกเช้า ไม่มีของค้างคืน เพื่อความอร่อยที่สดเสมอ</p>
+        </div>
+        <div class="process-step">
+          <span class="temp">05</span>
+          <h3>เสิร์ฟด้วยใจ</h3>
+          <p>ทุกแก้วที่ส่งถึงมือคุณ คือความตั้งใจทั้งหมดของเรา</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">เมนูของเรา</span>
+        <h2>เครื่องดื่มและของทานเล่น</h2>
+        <p>ราคารวมภาษีแล้ว เมนูทุกจานเราตั้งใจทำด้วยวัตถุดิบคุณภาพ</p>
+      </div>
+
+      <div class="section-head reveal" style="margin-top:70px; margin-bottom:40px;">
+        <span class="eyebrow">ซิกเนเจอร์</span>
+        <h2>สูตรเด็ดที่มีที่ T&amp;L ที่เดียว</h2>
+      </div>
+      <div class="menu-groups reveal">
+        <div class="menu-group" style="grid-column:1 / -1;">
+          <div class="menu-item" data-id="dirty" data-name="ดิร์ตี้" data-price="95">
+            <div class="menu-item-icon acc-ember"><svg><use href="#icon-dirty"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">ดิร์ตี้ <span class="cat-badge sig">ซิกเนเจอร์</span></span><span class="menu-item-note">เอสเปรสโซช็อตเย็นราดลงนมสด แยกชั้นสวย</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">95 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มดิร์ตี้ลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="tonic" data-name="คอฟฟี่โทนิค" data-price="105">
+            <div class="menu-item-icon acc-sky"><svg><use href="#icon-tonic"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">คอฟฟี่โทนิค <span class="cat-badge sig">ซิกเนเจอร์</span></span><span class="menu-item-note">เอสเปรสโซลอยน้ำโทนิค ซ่าสดชื่น ใส่ส้ม</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">105 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มคอฟฟี่โทนิคลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="macchiato" data-name="คาราเมล มัคคิอาโต้" data-price="95">
+            <div class="menu-item-icon acc-peach"><svg><use href="#icon-macchiato"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">คาราเมล มัคคิอาโต้ <span class="cat-badge sig">ซิกเนเจอร์</span></span><span class="menu-item-note">นมสตีมกับซอสคาราเมลไหม้อ่อนๆ</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">95 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มคาราเมลมัคคิอาโต้ลงตะกร้า">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-head reveal" style="margin-top:70px; margin-bottom:40px;">
+        <span class="eyebrow">เอสเปรสโซและดริป</span>
+        <h2>กาแฟคั่วสด ชงใหม่ทุกวัน</h2>
+        <p>ราคารวมภาษีแล้ว ทุกแก้วเราชงด้วยความใส่ใจ</p>
+      </div>
+
+      <div class="menu-groups reveal">
+        <div class="menu-group">
+          <h3>เอสเปรสโซเบส</h3>
+          <div class="menu-item" data-id="espresso" data-name="เอสเปรสโซ" data-price="65">
+            <div class="menu-item-icon acc-coffee"><svg><use href="#icon-espresso"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">เอสเปรสโซ</span><span class="menu-item-note">ช็อกโกแลตเข้ม อมเปรี้ยวเบาๆ</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">65 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มเอสเปรสโซลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="americano" data-name="อเมริกาโน่" data-price="75">
+            <div class="menu-item-icon acc-coffee"><svg><use href="#icon-americano"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">อเมริกาโน่</span><span class="menu-item-note">เบา สะอาด ดื่มง่าย</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">75 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มอเมริกาโน่ลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="latte" data-name="ลาเต้" data-price="85">
+            <div class="menu-item-icon acc-peach"><svg><use href="#icon-latte"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">ลาเต้</span><span class="menu-item-note">นมสตีมเนียน กลิ่นคาราเมลอ่อนๆ</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">85 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มลาเต้ลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="cappuccino" data-name="คาปูชิโน่" data-price="85">
+            <div class="menu-item-icon acc-peach"><svg><use href="#icon-cappuccino"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">คาปูชิโน่</span><span class="menu-item-note">ฟองนมหนานุ่ม</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">85 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มคาปูชิโน่ลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="espressosoda" data-name="เอสเปรสโซโซดา" data-price="95">
+            <div class="menu-item-icon acc-sky"><svg><use href="#icon-soda"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">เอสเปรสโซโซดา <span class="cat-badge new">ใหม่</span></span><span class="menu-item-note">ช็อตเอสเปรสโซลงโซดา ซ่าสดชื่น</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">95 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มเอสเปรสโซโซดาลงตะกร้า">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-group">
+          <h3>ดริปและเย็นพิเศษ</h3>
+          <div class="menu-item" data-id="pourover" data-name="ดริปตามเมล็ดประจำเดือน" data-price="95">
+            <div class="menu-item-icon acc-coffee"><svg><use href="#icon-dripper"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">ดริปตามเมล็ดประจำเดือน</span><span class="menu-item-note">เปลี่ยนตามล็อตคั่วใหม่</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">95 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มดริปลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="coldbrew" data-name="โคลด์บรูว์" data-price="90">
+            <div class="menu-item-icon acc-coffee"><svg><use href="#icon-coldbrew"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">โคลด์บรูว์</span><span class="menu-item-note">แช่เย็น 16 ชม. หวานจากธรรมชาติ</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">90 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มโคลด์บรูว์ลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="thaimilktea" data-name="ชาไทยเย็น" data-price="70">
+            <div class="menu-item-icon acc-ember"><svg><use href="#icon-teaglass"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">ชาไทยเย็น</span><span class="menu-item-note">สูตรต้มเอง หอมใบชา</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">70 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มชาไทยเย็นลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="matchalatte" data-name="มัทฉะลาเต้" data-price="95">
+            <div class="menu-item-icon acc-sage"><svg><use href="#icon-matcha"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">มัทฉะลาเต้</span><span class="menu-item-note">มัทฉะเกรดพิธีจากอุจิ</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">95 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มมัทฉะลาเต้ลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="honeylemontea" data-name="น้ำผึ้งมะนาวโซดา" data-price="75">
+            <div class="menu-item-icon acc-peach"><svg><use href="#icon-honey"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">น้ำผึ้งมะนาวโซดา <span class="cat-badge new">ใหม่</span></span><span class="menu-item-note">ผึ้งแท้ มะนาวสด โซดาซ่า</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">75 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มน้ำผึ้งมะนาวโซดาลงตะกร้า">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-head reveal" style="margin-top:70px; margin-bottom:40px;">
+        <span class="eyebrow">เครื่องดื่มปั่น</span>
+        <h2>เย็นสดชื่น ปั่นใหม่ทุกแก้ว</h2>
+      </div>
+
+      <div class="menu-groups reveal">
+        <div class="menu-group" style="grid-column:1 / -1;">
+          <div class="menu-item" data-id="frappecoffee" data-name="คอฟฟี่แฟรบเป้" data-price="100">
+            <div class="menu-item-icon acc-coffee"><svg><use href="#icon-frappe-coffee"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">คอฟฟี่แฟรบเป้ <span class="cat-badge hot">ขายดี</span></span><span class="menu-item-note">ปั่นเข้มข้น ท็อปด้วยวิปครีม</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">100 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มคอฟฟี่แฟรบเป้ลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="frappechoc" data-name="ช็อกโกแลตแฟรบเป้" data-price="100">
+            <div class="menu-item-icon acc-ember"><svg><use href="#icon-frappe-choc"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">ช็อกโกแลตแฟรบเป้</span><span class="menu-item-note">ช็อกโกแลตเข้ม ราดซอสช็อกโกแลต</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">100 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มช็อกโกแลตแฟรบเป้ลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="tarofrappe" data-name="เผือกปั่น" data-price="95">
+            <div class="menu-item-icon acc-lavender"><svg><use href="#icon-taro"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">เผือกปั่น <span class="cat-badge new">ใหม่</span></span><span class="menu-item-note">เผือกแท้ หอมมัน ไม่ใส่กาแฟ</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">95 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มเผือกปั่นลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="strawberrysmoothie" data-name="สตอเบอรี่สมูทตี้" data-price="105">
+            <div class="menu-item-icon acc-rose"><svg><use href="#icon-smoothie"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">สตอเบอรี่สมูทตี้ <span class="cat-badge new">ใหม่</span></span><span class="menu-item-note">สตอเบอรี่สดปั่น หวานธรรมชาติ</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">105 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มสตอเบอรี่สมูทตี้ลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="mangosmoothie" data-name="มะม่วงโยเกิร์ตปั่น" data-price="105">
+            <div class="menu-item-icon acc-peach"><svg><use href="#icon-banana"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">มะม่วงโยเกิร์ตปั่น <span class="cat-badge new">ใหม่</span></span><span class="menu-item-note">มะม่วงน้ำดอกไม้สดกับโยเกิร์ต</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">105 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มมะม่วงโยเกิร์ตปั่นลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="bananafrappe" data-name="กล้วยหอมปั่นนมสด" data-price="95">
+            <div class="menu-item-icon acc-peach"><svg><use href="#icon-milk"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">กล้วยหอมปั่นนมสด <span class="cat-badge new">ใหม่</span></span><span class="menu-item-note">กล้วยหอมแท้กับนมสด หอมนุ่มละมุน</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">95 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มกล้วยหอมปั่นลงตะกร้า">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-head reveal" style="margin-top:70px; margin-bottom:40px;">
+        <span class="eyebrow">ไม่มีกาแฟก็มี</span>
+        <h2>เครื่องดื่มและของว่าง</h2>
+      </div>
+
+      <div class="menu-groups reveal">
+        <div class="menu-group">
+          <h3>เครื่องดื่มไม่มีกาแฟ</h3>
+          <div class="menu-item" data-id="cocoa" data-name="โกโก้เย็น" data-price="80">
+            <div class="menu-item-icon acc-ember"><svg><use href="#icon-cocoa"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">โกโก้เย็น</span><span class="menu-item-note">ช็อกโกแลตเข้มข้น หวานกำลังดี</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">80 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มโกโก้เย็นลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="lemontea" data-name="ชามะนาว" data-price="75">
+            <div class="menu-item-icon acc-peach"><svg><use href="#icon-lemon"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">ชามะนาว</span><span class="menu-item-note">ชาดำเข้มสดชื่น ใส่มะนาวสด</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">75 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มชามะนาวลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="thaiGreentea" data-name="ชาเขียวเย็น" data-price="70">
+            <div class="menu-item-icon acc-sage"><svg><use href="#icon-teapot"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">ชาเขียวเย็น <span class="cat-badge new">ใหม่</span></span><span class="menu-item-note">ชาเขียวญี่ปุ่นชงเย็น หอมสดชื่น</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">70 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มชาเขียวเย็นลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="milktea" data-name="ชาเนยนมสด" data-price="75">
+            <div class="menu-item-icon acc-peach"><svg><use href="#icon-milk"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">ชาเนยนมสด <span class="cat-badge hot">ขายดี</span></span><span class="menu-item-note">ชาไทยผสมเนยสด หอมมันเข้มข้น</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">75 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มชาเนยนมสดลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="avocadosmoothie" data-name="อะโวคาโดสมูทตี้" data-price="105">
+            <div class="menu-item-icon acc-sage"><svg><use href="#icon-avocado"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">อะโวคาโดสมูทตี้ <span class="cat-badge new">ใหม่</span></span><span class="menu-item-note">อะโวคาโดสดปั่นกับนม หอมมันละมุน</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">105 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มอะโวคาโดสมูทตี้ลงตะกร้า">+</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-group">
+          <h3>เบเกอรี่และของว่าง</h3>
+          <div class="menu-item" data-id="croissant" data-name="ครัวซองต์เนย" data-price="55">
+            <div class="menu-item-icon acc-peach"><svg><use href="#icon-croissant"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">ครัวซองต์เนย</span><span class="menu-item-note">อบสดทุกเช้า ชั้นเนยกรอบ</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">55 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มครัวซองต์ลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="banoffee" data-name="บานอฟฟี่พาย" data-price="75">
+            <div class="menu-item-icon acc-peach"><svg><use href="#icon-pie"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">บานอฟฟี่พาย</span><span class="menu-item-note">คาราเมล กล้วย ครีมสด</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">75 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มบานอฟฟี่พายลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="cookie" data-name="คุกกี้ช็อกโกแลตชิพ" data-price="45">
+            <div class="menu-item-icon acc-ember"><svg><use href="#icon-cookie"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">คุกกี้ช็อกโกแลตชิพ</span><span class="menu-item-note">อบใหม่ ขอบกรอบ กลางนุ่ม</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">45 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มคุกกี้ลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="brownie" data-name="บราวนี่" data-price="65">
+            <div class="menu-item-icon acc-ember"><svg><use href="#icon-brownie"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">บราวนี่</span><span class="menu-item-note">เนื้อแน่น ช็อกโกแลต 70% เสิร์ฟอุ่นๆ</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">65 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มบราวนี่ลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="sandwich" data-name="แซนด์วิชทูน่า" data-price="85">
+            <div class="menu-item-icon acc-sage"><svg><use href="#icon-sandwich"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">แซนด์วิชทูน่า <span class="cat-badge new">ใหม่</span></span><span class="menu-item-note">ขนมปังโฮลวีต ทูน่า ผักสด ไข่ต้ม</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">85 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มแซนด์วิชลงตะกร้า">+</button>
+            </div>
+          </div>
+          <div class="menu-item" data-id="cheesecake" data-name="ชีสเค้กญี่ปุ่น" data-price="85">
+            <div class="menu-item-icon acc-berry"><svg><use href="#icon-pie"/></svg></div>
+            <div class="menu-item-info"><span class="menu-item-name">ชีสเค้กญี่ปุ่น <span class="cat-badge new">ใหม่</span></span><span class="menu-item-note">นุ่มละลายในปาก หอมกลิ่นชีสอ่อนๆ</span></div>
+            <div class="menu-item-right">
+              <span class="menu-item-price">85 ฿</span>
+              <button class="add-btn" aria-label="เพิ่มชีสเค้กลงตะกร้า">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">เสียงจากลูกค้า</span>
+        <h2>คนที่แวะมาแล้วว่าอย่างไร</h2>
+      </div>
+
+      <div class="review-grid reveal">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"กาแฟหอมมาก โดยเฉพาะดริปประจำเดือน เปลี่ยนไปเรื่อยๆ ไม่มีเบื่อเลยค่ะ"</p>
+          <span class="review-name">คุณพิมพ์ชนก</span>
+          <span class="review-role">ลูกค้าประจำ</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>"บรรยากาศร้านดีมาก นั่งทำงานได้ทั้งวัน คาปูชิโน่อร่อย ฟองนมเนียนสุดๆ"</p>
+          <span class="review-name">คุณธีรภัทร</span>
+          <span class="review-role">นักศึกษา</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★☆</div>
+          <p>"ชอบที่มีกราฟการคั่วให้ดู รู้สึกได้ว่าเจ้าของร้านตั้งใจจริงกับกาแฟทุกแก้ว"</p>
+          <span class="review-name">คุณอารยา</span>
+          <span class="review-role">ลูกค้าใหม่</span>
+        </div>
+      </div>
+
+      <div class="reveal" style="text-align:center;">
+        <button class="btn btn-ghost" id="viewAllReviewsBtn">อ่านรีวิวทั้งหมด</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="about-grid reveal">
+        <div class="about-visual">
+          <svg viewBox="0 0 300 375" aria-hidden="true">
+            <path d="M20,340 C 80,320 100,260 130,190 C 150,145 165,120 190,100 C 220,75 250,70 280,50" fill="none" stroke="#d4a84b" stroke-width="2" opacity="0.55"/>
+            <circle cx="190" cy="100" r="4" fill="#c44d2a"/>
+          </svg>
+        </div>
+        <div class="about-text">
+          <p>T&amp;L เกิดจากความรักในกาแฟของเพื่อนสองคน ที่ฝันอยากมีร้านคาเฟ่เล็กๆ ที่ทุกคนรู้สึกเหมือนบ้าน</p>
+          <p>เราเชื่อว่ากาแฟที่ดีไม่ได้อยู่ที่ราคาแพง แต่อยู่ที่ความใส่ใจตั้งแต่การเลือกเมล็ด วิธีคั่ว ไปจนถึงมือบาริสต้าที่ชงให้คุณทุกแก้ว</p>
+          <p>ทุกวันนี้ T&amp;L ยังคงคั่วกาแฟสัปดาห์ละ 2 ครั้ง อบเบเกอรี่ใหม่ทุกเช้า และเปิดประตูต้อนรับทุกคนด้วยรอยยิ้มเสมอ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">แวะมาหาเรา</span>
+        <h2>ที่ตั้งและเวลาเปิด-ปิด</h2>
+      </div>
+
+      <div class="visit-grid reveal">
+        <div>
+          <div class="info-block">
+            <h4>ที่อยู่</h4>
+            <p>123 ถนนนาคราช ตำบลท่าหิน<br>อำเภอเมือง จังหวัดลพบุรี 15000</p>
+          </div>
+          <div class="info-block">
+            <h4>เวลาเปิด-ปิด</h4>
+            <p>จันทร์–ศุกร์ 07:30–17:00 น.<br>เสาร์–อาทิตย์ 08:00–18:00 น.</p>
+          </div>
+          <div class="info-block">
+            <h4>ติดต่อ</h4>
+            <p>โทร 08X-XXX-XXXX<br>ไอจี @tandl.cafe</p>
+          </div>
+        </div>
+        <div class="map-frame" aria-hidden="true">
+          <svg viewBox="0 0 300 300">
+            <rect width="300" height="300" fill="#151210"/>
+            <path d="M0,120 H300 M0,200 H300 M100,0 V300 M200,0 V300" stroke="#221e1a" stroke-width="1"/>
+            <circle cx="150" cy="150" r="8" fill="#c44d2a"/>
+            <circle cx="150" cy="150" r="16" fill="none" stroke="#d4a84b" stroke-width="1.5" opacity="0.6"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <a href="#top" class="brand-mark">T&amp;L <em>Cafe</em></a>
+    <span>© 2026 T&amp;L Cafe · คาเฟ่สำหรับทุกคน</span>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-drawer" id="cartDrawer" aria-label="ตะกร้าสินค้า">
+  <div class="cart-head">
+    <h3>ตะกร้าของคุณ</h3>
+    <button class="cart-close" id="cartCloseBtn" aria-label="ปิดตะกร้า">&times;</button>
+  </div>
+  <div class="cart-body" id="cartBody">
+    <p class="cart-empty" id="cartEmptyMsg">ยังไม่มีเครื่องดื่มในตะกร้า — เลือกจากเมนูได้เลย</p>
+  </div>
+  <div class="cart-promo" id="cartPromoWrap">
+    <label class="cart-promo-label" for="promoInput">มีโค้ดส่วนลด?</label>
+    <div class="cart-promo-row">
+      <input type="text" id="promoInput" placeholder="กรอกโค้ดส่วนลด" autocomplete="off">
+      <button type="button" class="promo-apply-btn" id="promoApplyBtn">ใช้ส่วนลด</button>
+    </div>
+    <p class="cart-promo-msg" id="promoMsg"></p>
+    <div style="display:none;" id="promoActiveRow">
+      <span class="promo-active-badge" id="promoActiveLabel">ใช้โค้ดแล้ว</span>
+      <button type="button" class="promo-discard-btn" id="discardPromoBtn">ยกเลิกส่วนลด</button>
+    </div>
+  </div>
+  <div class="cart-foot">
+    <div class="cart-total-row">
+      <span>ยอดรวมทั้งหมด</span>
+      <strong id="cartTotal">0 ฿</strong>
+    </div>
+    <div class="cart-discount-row" id="cartDiscountRow" hidden>
+      <span id="cartDiscountLabel">ส่วนลด</span>
+      <strong id="cartDiscount">−0 ฿</strong>
+    </div>
+    <div class="cart-total-row cart-total-final">
+      <span>สุทธิ</span>
+      <strong id="cartNetTotal">0 ฿</strong>
+    </div>
+    <button class="btn btn-primary" id="checkoutBtn" disabled>ไปสั่งซื้อ</button>
+  </div>
+</aside>
+
+<div class="modal" id="checkoutModal">
+  <div class="modal-card">
+    <h3>ยืนยันคำสั่งซื้อ</h3>
+    <p class="modal-sub">กรอกข้อมูลไว้รับเครื่องดื่มที่ร้าน ชำระเงินตอนมารับ</p>
+
+    <form id="checkoutForm">
+      <div class="field">
+        <label>รูปแบบการรับ</label>
+        <div class="order-type">
+          <label><input type="radio" name="orderType" value="รับที่ร้าน" checked><span>รับที่ร้าน</span></label>
+          <label><input type="radio" name="orderType" value="กลับบ้าน"><span>ใส่ถุงกลับบ้าน</span></label>
+        </div>
+      </div>
+      <div class="field">
+        <label for="custName">ชื่อผู้สั่ง</label>
+        <input type="text" id="custName" required placeholder="เช่น คุณเอ">
+      </div>
+      <div class="field">
+        <label for="custPhone">เบอร์โทรติดต่อ</label>
+        <input type="tel" id="custPhone" required placeholder="08X-XXX-XXXX">
+      </div>
+      <div class="field">
+        <label for="custNote">หมายเหตุถึงบาริสต้า (ถ้ามี)</label>
+        <textarea id="custNote" placeholder="เช่น หวานน้อย, ไม่ใส่น้ำแข็ง"></textarea>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-ghost" id="cancelCheckoutBtn">ย้อนกลับ</button>
+        <button type="submit" class="btn btn-primary">ยืนยันสั่งซื้อ</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="confirmModal">
+  <div class="modal-card">
+    <span class="eyebrow">สั่งซื้อสำเร็จ</span>
+    <h3>ขอบคุณที่อุดหนุนครับ/ค่ะ</h3>
+    <p class="modal-sub" id="confirmGreeting">ทางร้านได้รับคำสั่งซื้อของคุณแล้ว</p>
+    <span class="confirm-code" id="confirmCode">#0000</span>
+    <div class="confirm-summary" id="confirmSummary"></div>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-ghost" id="copyOrderBtn">คัดลอกออเดอร์</button>
+      <button type="button" class="btn btn-primary" id="closeConfirmBtn">เรียบร้อย</button>
+    </div>
+  </div>
+</div>
+
+<button class="promo-fab" id="promoFab">🎁 โปรโมชั่น</button>
+
+<div class="modal" id="promoModal">
+  <div class="modal-card">
+    <span class="eyebrow">ต้อนรับสมาชิกใหม่</span>
+    <h3>ลด 10% สำหรับออเดอร์แรก</h3>
+    <p class="modal-sub">กด "ใช้โค้ดเลย" แล้วส่วนลด 10% จะเข้าไปในตะกร้าของคุณทันที — ใช้ได้กับทุกเมนู ไม่มีขั้นต่ำ</p>
+    <div class="promo-code-box">
+      <strong id="promoCodeText">TL10</strong>
+      <button type="button" id="usePromoBtn">ใช้โค้ดเลย</button>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-later" id="closePromoBtn">ไว้ก่อน</button>
+      <button type="button" class="btn btn-primary" id="promoToMenuBtn">ไปเลือกเมนู</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="reviewsModal">
+  <div class="modal-card" style="max-width:600px;">
+    <span class="eyebrow">รีวิวทั้งหมด</span>
+    <h3>เสียงจากลูกค้าของเรา</h3>
+    <div id="allReviewsList" style="margin-top:22px;">
+      <div class="review-card" style="margin-bottom:16px;">
+        <div class="stars">★★★★★</div>
+        <p>"กาแฟหอมมาก โดยเฉพาะดริปประจำเดือน เปลี่ยนไปเรื่อยๆ ไม่มีเบื่อเลยค่ะ"</p>
+        <span class="review-name">คุณพิมพ์ชนก</span><span class="review-role">ลูกค้าประจำ</span>
+      </div>
+      <div class="review-card" style="margin-bottom:16px;">
+        <div class="stars">★★★★★</div>
+        <p>"บรรยากาศร้านดีมาก นั่งทำงานได้ทั้งวัน คาปูชิโน่อร่อย ฟองนมเนียนสุดๆ"</p>
+        <span class="review-name">คุณธีรภัทร</span><span class="review-role">นักศึกษา</span>
+      </div>
+      <div class="review-card" style="margin-bottom:16px;">
+        <div class="stars">★★★★☆</div>
+        <p>"ชอบที่มีกราฟการคั่วให้ดู รู้สึกได้ว่าเจ้าของร้านตั้งใจจริงกับกาแฟทุกแก้ว"</p>
+        <span class="review-name">คุณอารยา</span><span class="review-role">ลูกค้าใหม่</span>
+      </div>
+      <div class="review-card" style="margin-bottom:16px;">
+        <div class="stars">★★★★★</div>
+        <p>"ครัวซองต์กรอบมาก คู่กับลาเต้ร้อนตอนเช้าคือลงตัว จะแวะมาอีกแน่นอน"</p>
+        <span class="review-name">คุณกมลชนก</span><span class="review-role">ลูกค้าประจำ</span>
+      </div>
+      <div class="review-card" style="margin-bottom:16px;">
+        <div class="stars">★★★★☆</div>
+        <p>"คอฟฟี่โทนิคแก้วแรกในชีวิตที่ชอบ ซ่าและหอมกาแฟกำลังดี ไม่หวานเกินไป"</p>
+        <span class="review-name">คุณนพดล</span><span class="review-role">นักท่องเที่ยว</span>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"พนักงานเป็นกันเองมาก แนะนำเมนูดี บริการรวดเร็วแม้ร้านจะเต็ม"</p>
+        <span class="review-name">คุณสุพิชญา</span><span class="review-role">ลูกค้าประจำ</span>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button type="button" class="btn btn-primary" id="closeReviewsBtn" style="flex:none; margin-left:auto;">ปิด</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="memberModal">
+  <div class="modal-card">
+    <span class="eyebrow">สมาชิก T&amp;L</span>
+    <h3 id="memberTitle">สมัครสมาชิก</h3>
+    <p class="modal-sub" id="memberSub">สะสมแต้มทุกการสั่งซื้อ แลกเครื่องดื่มฟรีและรับสิทธิ์วันเกิด</p>
+
+    <div id="memberFormWrap">
+      <ul class="perk-list">
+        <li>ทุก 20 ฿ สะสม 1 แต้ม ครบ 100 แต้มแลกเครื่องดื่มฟรี 1 แก้ว</li>
+        <li>รับส่วนลด 15% ในเดือนเกิด</li>
+        <li>แจ้งเมนูใหม่และโปรโมชั่นก่อนใคร</li>
+      </ul>
+      <form id="memberForm">
+        <div class="field">
+          <label for="memberName">ชื่อ-นามสกุล</label>
+          <input type="text" id="memberName" required placeholder="เช่น สมชาย ใจดี">
+        </div>
+        <div class="field">
+          <label for="memberPhone">เบอร์โทร</label>
+          <input type="tel" id="memberPhone" required placeholder="08X-XXX-XXXX">
+        </div>
+        <div class="field">
+          <label for="memberBirthday">วันเกิด</label>
+          <input type="date" id="memberBirthday">
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn btn-ghost" id="cancelMemberBtn">ยกเลิก</button>
+          <button type="submit" class="btn btn-primary">สมัครสมาชิก</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="memberResultWrap" style="display:none;">
+      <div class="member-card">
+        <span class="eyebrow">บัตรสมาชิกของคุณ</span>
+        <div id="memberResultName" style="font-family:var(--serif); font-size:1.1rem; margin-top:4px;"></div>
+        <div class="member-code" id="memberCode">MG-0000</div>
+      </div>
+      <p class="modal-sub">แจ้งชื่อหรือเบอร์โทรกับพนักงานทุกครั้งที่สั่งซื้อ เพื่อสะสมแต้ม</p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-primary" id="closeMemberResultBtn" style="flex:none; margin-left:auto;">เรียบร้อย</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
